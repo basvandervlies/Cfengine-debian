@@ -2,4 +2,3 @@
 	path = cfengine
 	url = https://github.com/cfengine/core.git
     branch = 3.12.x
- 
