@@ -1,3 +1,9 @@
+cfengine3 (3.12.0-1) UNRELEASED; urgency=medium
+
+  * The new 3.12.x tree
+
+ -- Bas van der Vlies <bas.vandervlies@surfsara.nl>  Wed, 09 May 2018 19:09:45 +0200
+
 cfengine3 (3.10.3-1) UNRELEASED; urgency=medium
 
   * New cfengine stable release 3.10.3 

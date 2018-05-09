@@ -3,7 +3,7 @@
 
 ## Must be set else we end up with the wrong version
 #
-export EXPLICIT_VERSION = 3.10.3
+#export EXPLICIT_VERSION = 3.12.0
 
 %:
 	dh $@ --with quilt
@@ -14,6 +14,7 @@ override_dh_auto_configure:
 	#/bin/rm -f tests/acceptance//00_basics/macros/if.cf
 
 	dh_autoreconf
+	./autogen.sh
 	./configure --enable-shared=yes \
 				--prefix=/usr \
 				--with-sql=yes \
@@ -23,8 +24,8 @@ override_dh_auto_configure:
 				--with-lmdb \
 				--with-libxml2 \
 				--with-workdir=/var/lib/cfengine3 \
-                --with-masterdir=/data/cfengine3/config \
-                --with-inputdir=/etc/cfengine3 \
+				--with-masterdir=/data/cfengine3/config \
+				--with-inputdir=/etc/cfengine3 \
 				--with-logdir=/var/log/cfengine3 \
 				--with-piddir=/run/cfengine3 \
 				--docdir=\$${prefix}/share/doc/cfengine3 \
