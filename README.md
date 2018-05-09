@@ -1,14 +1,13 @@
 # cfengine-debian
 CFengine debian packages
 
-cfengine debian build
+First clone:
+ * `git submodule update --init --recursive`
 
-    To update the submodules like slurm git submodule foreach --recursive git pull
+To update the submodules:
+ * `git submodule foreach --recursive git pull`
 
-Build the package
-
-The following steps to build for example 17.11:
-
+Build the debian package
     cd core
     git checkout 3.12.x
     ln -s ../debian .

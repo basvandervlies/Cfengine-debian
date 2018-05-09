@@ -1,3 +1,5 @@
 [submodule "cfengine"]
 	path = cfengine
 	url = https://github.com/cfengine/core.git
+    branch = master
+ 
