@@ -19,8 +19,10 @@
 # the debian-policy package
 
 WORKDIR=/var/lib/cfengine3
-INPUTDIR=/etc/cfengine3
-MASTERDIR=/data/cfengne3/config
+INPUTDIR=$WORKDIR/inputs
+#INPUTDIR=/etc/cfengine3
+#MASTERDIR=/data/cfengne3/config
+MASTERDIR=$WORKDIR/masterfiles
 
 
 set_permissions() {
@@ -43,7 +45,7 @@ upgrade_cfengine () {
     if [  -h $WORKDIR/modules ]
     then
         rm $WORKDIR/modules
-        if [ =d /etc/cfengine3/modules ]
+        if [ -d /etc/cfengine3/modules ]
         then
             cp -a /etc/cfengine3/modules .
         fi
