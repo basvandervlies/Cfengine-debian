@@ -1,3 +1,9 @@
+cfengine3 (3.12.0-2) UNRELEASED; urgency=medium
+
+  * New debian 3.12.0 version
+
+ -- Bas van der Vlies <bas.vandervlies@surfsara.nl>  Mon, 28 May 2018 14:15:25 +0200
+
 cfengine3 (3.12.0-1) UNRELEASED; urgency=medium
 
   * The new 3.12.x tree
