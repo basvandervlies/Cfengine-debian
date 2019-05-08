@@ -1,3 +1,9 @@
+cfengine3 (3.12.2-1) UNRELEASED; urgency=medium
+
+  * New CFengine version
+
+ -- Bas van der Vlies <bas@install1.lisa.surfsara.nl>  Wed, 08 May 2019 11:45:22 +0200
+
 cfengine3 (3.12.0-4) UNRELEASED; urgency=medium
 
   * Final 3.12.0 version
