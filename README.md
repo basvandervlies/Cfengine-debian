@@ -8,9 +8,9 @@ To update the submodules:
  * `git submodule foreach --recursive git pull`
 
 Build the debian package
-    cd core
-    git checkout 3.12.x
-    ln -s ../debian .
-    dch -n (maybe w must upgrade the version number)
-    debian/rules build
-    fakeroot debian/rules binary
+ * cd cfengine
+ * git checkout 3.12.x
+ * ln -s ../debian .
+ * dch -n (maybe w must upgrade the version number)
+ * debian/rules build
+ * fakeroot debian/rules binary
