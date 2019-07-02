@@ -3,7 +3,7 @@
 
 ## Must be set else we end up with the wrong version
 #
-export EXPLICIT_VERSION = 3.12.0
+export EXPLICIT_VERSION = 3.12.2
 
 %:
 	dh $@ --with quilt
